@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e089fc74-f5eb-48c8-b143-46e3a3ca8f99",
+		"_postman_id": "646cf11e-09ff-4780-98f4-fc6e6f5f7a45",
 		"name": "Developer Forum",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -20,12 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/newUser",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/newUser",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"newUser"
 					]
@@ -48,12 +49,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						""
 					]
@@ -76,12 +78,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/question",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/question",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"question"
 					]
@@ -104,12 +107,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/question/new",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/question/new",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"question",
 						"new"
@@ -133,12 +137,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/question/getQuestion/5fbb417e91d2b83d9080877a",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/question/getQuestion/5fbb417e91d2b83d9080877a",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"question",
 						"getQuestion",
@@ -163,12 +168,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/question/submitAnswer",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/question/submitAnswer",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"question",
 						"submitAnswer"
@@ -192,12 +198,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/question/acceptAnswer",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/question/acceptAnswer",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"question",
 						"acceptAnswer"
@@ -221,12 +228,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/question/comment/5fbb417e91d2b83d9080877a",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/question/comment/5fbb417e91d2b83d9080877a",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"question",
 						"comment",
@@ -251,12 +259,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3030/question/commentAnswer/5fbb417e91d2b83d9080877a",
-					"protocol": "http",
+					"raw": "https://developer-forum-server.herokuapp.com/question/commentAnswer/5fbb417e91d2b83d9080877a",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"developer-forum-server",
+						"herokuapp",
+						"com"
 					],
-					"port": "3030",
 					"path": [
 						"question",
 						"commentAnswer",
