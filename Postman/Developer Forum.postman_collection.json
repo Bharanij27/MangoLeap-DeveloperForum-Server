@@ -1,0 +1,271 @@
+{
+	"info": {
+		"_postman_id": "e089fc74-f5eb-48c8-b143-46e3a3ca8f99",
+		"name": "Developer Forum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"uname\" : \"User\",\r\n    \"email\" : \"user1@gmail.com\",\r\n    \"pass\" : \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/newUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"newUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"user1@gmail.com\",\r\n    \"pass\" : \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Questions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxQGdtYWlsLmNvbSIsImlhdCI6MTYwNjEwNTQ3M30.9ULIbBFRMxKeJW9nyGPysuqK8xi_9EieiKCTeaVhZck\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/question",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask New Question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxQGdtYWlsLmNvbSIsImlhdCI6MTYwNjEwNTQ3M30.9ULIbBFRMxKeJW9nyGPysuqK8xi_9EieiKCTeaVhZck\",\r\n    \"title\" : \"How to Post\",\r\n    \"description\" : \"Hi guys, I don't know how to post a question in this website. can anybody please tell me the procedure?\",\r\n    \"askedBy\" : \"User\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/question/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"question",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findQuestion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxQGdtYWlsLmNvbSIsImlhdCI6MTYwNjEwNTQ3M30.9ULIbBFRMxKeJW9nyGPysuqK8xi_9EieiKCTeaVhZck\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/question/getQuestion/5fbb417e91d2b83d9080877a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"question",
+						"getQuestion",
+						"5fbb417e91d2b83d9080877a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SubmitAnswer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxQGdtYWlsLmNvbSIsImlhdCI6MTYwNjEwNTQ3M30.9ULIbBFRMxKeJW9nyGPysuqK8xi_9EieiKCTeaVhZck\",\r\n    \"questionId\" : \"5fbb417e91d2b83d9080877a\",\r\n    \"answer\" : \"Sample Answer\",\r\n    \"by\" : \"Anonymous User\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/question/submitAnswer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"question",
+						"submitAnswer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accept Answer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxQGdtYWlsLmNvbSIsImlhdCI6MTYwNjEwNTQ3M30.9ULIbBFRMxKeJW9nyGPysuqK8xi_9EieiKCTeaVhZck\",\r\n    \"questionId\" : \"5fbb417e91d2b83d9080877a\",\r\n    \"answerId\" : \"User1606129780213\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/question/acceptAnswer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"question",
+						"acceptAnswer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comment Question",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxQGdtYWlsLmNvbSIsImlhdCI6MTYwNjEwNTQ3M30.9ULIbBFRMxKeJW9nyGPysuqK8xi_9EieiKCTeaVhZck\",\r\n    \"askedBy\" : \"User2\",\r\n    \"content\" : \"Easy Question\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/question/comment/5fbb417e91d2b83d9080877a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"question",
+						"comment",
+						"5fbb417e91d2b83d9080877a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commentAnswer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXIxQGdtYWlsLmNvbSIsImlhdCI6MTYwNjEwNTQ3M30.9ULIbBFRMxKeJW9nyGPysuqK8xi_9EieiKCTeaVhZck\",\r\n    \"answerId\": \"User1606156065827\",\r\n    \"askedBy\" : \"User2\",\r\n    \"content\" : \"yea right one\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3030/question/commentAnswer/5fbb417e91d2b83d9080877a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"question",
+						"commentAnswer",
+						"5fbb417e91d2b83d9080877a"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
